@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>横琴半导体新闻日报</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#e0e0e0;line-height:1.7;min-height:100vh;}
+.wrap{max-width:680px;margin:0 auto;padding:24px 16px;}
+.header{text-align:center;padding:36px 20px 24px;}
+.header h1{font-size:22px;font-weight:600;color:#fff;letter-spacing:1px;}
+.header .sub{font-size:14px;color:rgba(255,255,255,.45);margin-top:4px;}
+.header .stats{font-size:13px;color:rgba(245,158,11,.8);margin-top:8px;}
+
+.cat-header{display:flex;align-items:center;justify-content:space-between;padding:16px 0 8px;margin-top:8px;border-bottom:1px solid rgba(255,255,255,.1);}
+.cat-name{font-size:15px;font-weight:600;color:#fff;}
+.cat-count{font-size:12px;color:rgba(255,255,255,.4);}
+
+.item{background:rgba(255,255,255,.06);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:12px;padding:18px 20px;margin-top:10px;border:1px solid rgba(255,255,255,.08);}
+.item.important{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.4);}
+.item h3{font-size:15px;font-weight:600;margin-bottom:8px;color:#fff;line-height:1.5;}
+.badge{display:inline-block;background:#f59e0b;color:#1a1a2e;font-size:11px;padding:1px 7px;border-radius:3px;margin-left:6px;vertical-align:middle;font-weight:600;}
+.summary{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;line-height:1.7;}
+.meta{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding-top:10px;}
+.source{font-size:12px;color:rgba(255,255,255,.35);}
+.src-tag{font-size:11px;color:#60a5fa;border:1px solid rgba(96,165,250,.3);border-radius:3px;padding:0 5px;margin-left:4px;}
+.age-today{font-size:11px;color:#22c55e;margin-left:6px;font-weight:500;}
+.age-recent{font-size:11px;color:#a3e635;margin-left:6px;}
+.age-week{font-size:11px;color:#facc15;margin-left:6px;}
+.age-old{font-size:11px;color:#f87171;margin-left:6px;}
+
+.ai-badge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;font-size:10px;font-weight:700;margin-left:6px;vertical-align:middle;}
+.ai-high{background:#22c55e;color:#0f0c29;}
+.ai-mid{background:#facc15;color:#1a1a2e;}
+.ai-low{background:#6b7280;color:#e0e0e0;}
+.ai-summary{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:6px;padding:4px 8px;background:rgba(255,255,255,.03);border-radius:6px;border-left:2px solid rgba(34,197,94,.3);line-height:1.6;}
+.ai-tags{margin-bottom:8px;}
+.ai-tag{display:inline-block;font-size:10px;color:#a78bfa;border:1px solid rgba(167,139,250,.25);border-radius:3px;padding:0 5px;margin-right:4px;margin-bottom:2px;background:rgba(167,139,250,.06);}
+
+.fold-toggle{font-size:13px;color:rgba(255,255,255,.45);cursor:pointer;padding:6px 0 2px;user-select:none;}
+.fold-toggle:hover{color:#60a5fa;}
+.fold-arrow{display:inline-block;transition:transform .2s;}
+.open > .fold-toggle .fold-arrow{transform:rotate(90deg);}
+.fold-content{display:none;margin-top:6px;border-left:2px solid rgba(255,255,255,.1);padding-left:12px;}
+.open .fold-content{display:block;}
+.fold-item{padding:4px 0;}
+.fold-title{font-size:13px;line-height:1.4;}
+.fold-title a{font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;}
+.fold-title a:hover{color:#60a5fa;}
+.fold-source{font-size:11px;color:rgba(255,255,255,.3);margin-top:1px;}
+
+a{color:#60a5fa;font-size:13px;text-decoration:none;font-weight:500;}
+a:hover{color:#93c5fd;}
+.footer{text-align:center;color:rgba(255,255,255,.25);font-size:12px;margin:36px 0 40px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+  <h1>🐙 横琴半导体新闻日报</h1>
+  <div class="sub">2026-06-23</div>
+  <div class="stats">共 3 条 · 3 条重要</div>
+</div>
+
+<div class="cat-header">
+  <span class="cat-name">👥 人才/招聘</span>
+  <span class="cat-count">1条 · ⚠️1条重要</span>
+</div><div class="item important">
+  <h3>最高27万!2026横琴人才补贴怎么领? <span class="badge">⚠️ 重要</span> <span class="ai-badge ai-high">8</span> <span class="age-week">7天前</span></h3>
+  <div class="summary">在横琴工作的朋友们注意啦️2026年横琴人才补贴已经开始申报补贴金额 澳门青年:27万 学历型/专业技术人才:18万 技能人...</div>
+  
+  
+  <div class="meta"><span class="source">小书达代理记账报税</span><a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCFUOp-iKXJ3F4uZpgFTD7SVqXa8Fplpd9RFHU2VJAD2jpEwwl6mBwKnYYIMTdO_Ka8O4DkwDYaI7AgHsXR6wJAM-BNYhsu7xPRDIi3tG9oNPcFLJ0iKe8HBjkabMtb0T9jhbaEHBn8Egg3hJNM81ZJsfu7asD9-NR7xMo8j4XguYH8IG1CmQdsVzQx7mNRUqiQFRR00QAgodj3x9Nw6p-Fg..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E4%BA%BA%E6%89%8D %E8%A1%A5%E8%B4%B4 %E7%94%B3%E6%8A%A5&amp;token=C078BA88968A92BECFC89B2F977B8C5FCF158A6D6A39DBC5" target="_blank">阅读原文 →</a></div>
+  
+  <div class="fold-toggle" onclick="this.parentElement.classList.toggle('open')">
+    📎 还有 3 篇相关报道 <span class="fold-arrow">▸</span>
+  </div>
+  <div class="fold-content">
+    <div class="fold-item">
+      <div class="fold-title">
+        <a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCFUOp-iKXJ3F4uZpgFTD7SVqXa8Fplpd9rp2OnxtEcm2F-BwgFkJrmho-B4mYctoSCUnjZxj2tBHtytt45Oah4U9eg2MNw6OAZ240xNLVG6xaymFWLHDtXZiVB8hTFKujvB_tj1CDkSNWR6eqNjpGXn_NnRIRR2pJK1Gdy9_po6KmsRT61ILuL8Aw0qWbUPfMl7YWsR5UiAeAFV_3u-a3OQ..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E4%BA%BA%E6%89%8D %E8%A1%A5%E8%B4%B4 %E7%94%B3%E6%8A%A5&amp;token=C078BA88968A92BECFC89B2F977B8C5FCF158A6D6A39DBC5" target="_blank">横琴人才补贴人员名单公示</a> <span class="age-week">7天前</span>
+      </div>
+      <div class="fold-source">横琴潮</div>
+    </div>
+    <div class="fold-item">
+      <div class="fold-title">
+        <a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCwd6OKunZuId4uZpgFTD7SVqXa8Fplpd9-S-vugpYSKH4Zjbfj6hjKpo5yK22QY9C_z39uHaSQm_GGrXch5AZE8-esAt2g2OWWQqhw4hKZUMO8AkYcqUBAmwE8D_5gKCmvG7lthR9rlgKPkBb6EQBX650VGuty5B6CL9j-u4HYjcBiIWEQKA8xDeMiL5HZvtA9TBVgDlmNKs89kyxDwoXvg..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E7%94%B3%E6%8A%A5 %E8%A1%A5%E8%B4%B4&amp;token=C078C8F4E4F9E2CEBEBBEA5CE75E8815BEE73ABC6A39DBC8" target="_blank">公示名单|横琴 2026 人才生活补贴第一批名单出炉,横琴注册公司人才抓紧申报!</a> <span class="age-week">6天前</span>
+      </div>
+      <div class="fold-source">横琴百事通</div>
+    </div>
+    <div class="fold-item">
+      <div class="fold-title">
+        <a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCFUOp-iKXJ3F4uZpgFTD7SVqXa8Fplpd9LT0A6s8IVDRDbq54ZlA-XuxT6XWpAeid1QuuPjAgdnL0BRsS-zSe4rxFA2h2bfB3wVrEhIoePGS9y7wXratyy7KUapbNaxOMzKVOt70Aqg-f-DMudRhpmWfKbGgjYMyJk7Nq95s0UTSbGgDzvKGWj0jdRBHjq7B-50R60tzjbfPuL0unUdKkuw..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E4%BA%BA%E6%89%8D %E8%A1%A5%E8%B4%B4 %E7%94%B3%E6%8A%A5&amp;token=C078BA88968A92BECFC89B2F977B8C5FCF158A6D6A39DBC5" target="_blank">【琴澳资讯965】横琴粤澳深度合作区引进学历型、专业技术和技能人才生活补贴(2026年度第一批)人员公示名单</a> <span class="age-week">6天前</span>
+      </div>
+      <div class="fold-source">横琴企业家俱乐部</div>
+    </div>
+  </div>
+</div>
+<div class="cat-header">
+  <span class="cat-name">💰 投资/资金</span>
+  <span class="cat-count">1条 · ⚠️1条重要</span>
+</div><div class="item important">
+  <h3>2026横琴投资入驻指南!政策红利+优质载体配齐,企业落户黄金时机 <span class="badge">⚠️ 重要</span> <span class="ai-badge ai-mid">6</span> <span class="age-week">4天前</span></h3>
+  <div class="summary">今天这篇用大白话,一次性讲透横琴的红利政策+各大优质产业载体,帮你精准避坑、快速找准适配自己行业的落地方案.2026横琴核...</div>
+  
+  
+  <div class="meta"><span class="source">中政联行</span><a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCCjE2r8m-cah4uZpgFTD7SVqXa8Fplpd9Kv8YOsp5f6YgUDPhBn9fA1G_s_sOolYADg0V066llbE6-LZ0qE1vfh90exJ91T_HLrMuKDwNGZuWoY6gyp6ailv5Xus0TF8xEDTL0iAxWd_NFJknN4TmHp35YonYPnXIFF9Jno-JborpwV4HrnHwdP784zl_ohpz5rUsx0wenJsYJSSFPgfogQ..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E4%BA%A7%E4%B8%9A %E6%94%BF%E7%AD%96 2026&amp;token=C078C1C2A4B8A18DFDFBA91CA436F71DFDB3BF746A39DBC7" target="_blank">阅读原文 →</a></div>
+  
+</div>
+<div class="cat-header">
+  <span class="cat-name">📋 申报/补贴</span>
+  <span class="cat-count">1条 · ⚠️1条重要</span>
+</div><div class="item important">
+  <h3>横琴发钱啦!最高补贴800万!非横琴户口也能领! <span class="badge">⚠️ 重要</span> <span class="ai-badge ai-mid">6</span> <span class="age-recent">3天前</span></h3>
+  <div class="summary">横琴人才新政补贴申报中据了解,横琴人才新政(《横琴粤澳深度合作区支持人才高质量发展若干措施》及配套实施细则)于4月13日...</div>
+  
+  
+  <div class="meta"><span class="source">香山网</span><a href="https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgSyLL12FoGtTCFUOp-iKXJ3F4uZpgFTD7SVqXa8Fplpd9lSl950slr8MOWKWsfhIvwESbS92daYRbULDyUctPWHSfw8sh8YHjNQHSKWn6fHitrHLH-so6VYsgYZ7F34UR3F2zA92glL3oMkhqnjEdrZjP3drzGc0h_0qnSYVAqpbBeIWTDyR24aBIP_ks6ZM4V3D094XhGG-RdMvb44_imk9535pjGOOjYg..&amp;type=2&amp;query=%E6%A8%AA%E7%90%B4 %E4%BA%BA%E6%89%8D %E8%A1%A5%E8%B4%B4 %E7%94%B3%E6%8A%A5&amp;token=C078BA88968A92BECFC89B2F977B8C5FCF158A6D6A39DBC5" target="_blank">阅读原文 →</a></div>
+  
+</div>
+<div class="cat-header">
+  <span class="cat-name">⚠️ 低相关备选</span>
+  <span class="cat-count">4条</span>
+</div>
+<details class="low-rel-details">
+  <summary class="low-rel-summary">▶ 点击展开 4 条低相关新闻</summary><div class="item">
+  <h3>8点1氪丨SpaceX跌破IPO首日收盘价，市值蒸发4000亿美元；英国首相斯塔默宣布辞职；SK海力士市值首超三星电子 <span class="ai-badge ai-mid">5</span> <span class="age-today">今日</span></h3>
+  <div class="summary">今日热点导览
+  三星电子向韩国所有员工开放ChatGPT和Codex
+  港股智谱暴涨，总市值突破1万亿港元
+  何小鹏、曾顺福、白重恩出任蚂蚁集</div>
+  
+  
+  <div class="meta"><span class="source">36氪</span> <span class="src-tag">RSS</span><a href="https://36kr.com/p/3865001641006081?f=rss" target="_blank">阅读原文 →</a></div>
+  
+</div><div class="item">
+  <h3>氪星晚报｜赢创计划全球裁员3200人；台积电28nm较年初减产25%；三星电子向韩国所有员工开放ChatGPT和Codex <span class="ai-badge ai-mid">5</span> <span class="age-recent">1天前</span></h3>
+  <div class="summary">大公司：
+  <a href="https://36kr.com/newsflashes/3864020323276038" rel="noo</div>
+  
+  
+  <div class="meta"><span class="source">36氪</span> <span class="src-tag">RSS</span><a href="https://36kr.com/p/3864065855706120?f=rss" target="_blank">阅读原文 →</a></div>
+  
+</div><div class="item">
+  <h3>美国芯片安全法案将强制性要求位置跟踪 AI 芯片 <span class="ai-badge ai-mid">5</span> <span class="age-recent">1天前</span></h3>
+  <div class="summary">美国国会正在审议芯片安全法案（Chip Security Act），该法案将为先进 AI 芯片加入更严格的安全验证功能，将要求芯片出口商通过定制的位置验证硬件或软件追踪先进芯片的流向，确保先进芯片不会</div>
+  
+  
+  <div class="meta"><span class="source">Solidot</span> <span class="src-tag">RSS</span><a href="https://www.solidot.org/story?sid=84641" target="_blank">阅读原文 →</a></div>
+  
+</div><div class="item">
+  <h3>36氪首发 | 联想之星险峰联合领投，AI算力中心感知与效能管理方案商完成天使轮融资 <span class="ai-badge ai-mid">5</span> <span class="age-recent">1天前</span></h3>
+  <div class="summary">作者 | 乔钰杰
+  编辑 | 袁斯来
+  硬氪获悉，芯感通科技有限公司（以下简称“芯感通”）日前完成数千万元天使轮融资，由联</div>
+  
+  
+  <div class="meta"><span class="source">36氪</span> <span class="src-tag">RSS</span><a href="https://36kr.com/p/3863885024973832?f=rss" target="_blank">阅读原文 →</a></div>
+  
+</div>
+</details>
+<div class="footer">🐙 章鱼整理 · 多源聚合 · 同话题折叠 · AI 评级</div>
+</div>
+</body>
+</html>
